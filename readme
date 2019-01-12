@@ -1,0 +1,16 @@
+american_option(S0, sigma, r, d, K, type, N, T) 
+
+where:
+
+S0 is the initial price of the option
+sigma is the option volatility
+r is the rate of return
+d is the dividends rate
+K is the strike value
+type is either "call" or "put" denoting either a call or put payoff function, respectively
+N is the number of periods at which the option could be exercised
+T is the final expiration day. Notice that N<T
+As a test the function should be able to run with the following parameters:
+
+1. american_option(100, 0.3, 0.1, 0.05, 110, "call", 12, 365)
+2. american_option(100, 0.3, 0.1, 0.05, 90,   "put", 12, 365)
